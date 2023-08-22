@@ -8,7 +8,7 @@ import impiloLogo from "/public/images/impilo-logo.png";
 import ProjectDropdown from "./ProjectDropdown";
 
 export default function DesktopHeader() {
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
   const checkActivePath = useActivePath();
   return (
     <div className="desktop-header-wrapper">
