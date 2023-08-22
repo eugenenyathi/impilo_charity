@@ -1,4 +1,3 @@
-"use client";
 import "../styles/styles.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
