@@ -1,0 +1,90 @@
+.board-members-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  .director {
+    margin-bottom: 0;
+
+    .director-details {
+      .detail {
+        &.name {
+          padding: 6px 10px;
+          font-size: 18px;
+        }
+
+        &.position {
+          padding: 5px 8px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .director-info-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      background-color: transparent;
+      transition: background-color 0.6s linear;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .info-icon {
+        display: none;
+        color: $color-clear;
+        font-size: 60px;
+      }
+    }
+
+    &:hover {
+      .director-img {
+        transform: scale(1.2);
+      }
+
+      .director-info-cover {
+        opacity: 1;
+        background-color: rgb(0, 0, 0, 0.6);
+      }
+
+      .director-details {
+        transform: translateX(-200px);
+      }
+    }
+  }
+}
+
+.director-sidebar-wrapper {
+  width: 50%;
+  .director-inner-wrapper {
+    .director-details {
+      .head {
+        padding: 12px 30px;
+
+        .director-name {
+          font-size: 28px;
+        }
+      }
+
+      .director-position {
+        font-size: 18px;
+        padding: 12px 30px;
+      }
+    }
+
+    .about-director {
+      padding: 30px;
+
+      p {
+        line-height: 1.7;
+
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

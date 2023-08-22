@@ -1,0 +1,40 @@
+.footer-wrapper {
+  padding: 30px 0px 30px 0px;
+  background-color: $color-black-1;
+  color: $color-clear-2;
+
+  .footer-org-logo {
+    max-width: 110px;
+    max-height: 60px;
+  }
+}
+
+.footer-inner-wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  @include flexflip;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media-links {
+  @include flexflip;
+  align-items: center;
+  gap: 10px;
+
+  .ul-list {
+    list-style-type: none;
+    @include flexAlign;
+    gap: 15px;
+  }
+
+  .footer-icon {
+    font-size: 18px;
+    color: $color-clear-2;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

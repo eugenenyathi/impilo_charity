@@ -1,0 +1,86 @@
+.project-page-wrapper {
+  .top-level-heading {
+    &.width-container {
+      margin: 80px auto;
+    }
+
+    .section-heading {
+      font-size: 40px;
+    }
+  }
+
+  .section-paragraph {
+    font-size: 16px;
+  }
+
+  .section-heading.projects {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  .section-items-wrapper.projects-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+}
+
+.project-page-project {
+  margin-bottom: 80px;
+
+  .section-landing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &.beekeeping {
+      margin-top: 40px;
+    }
+  }
+
+  .section-heading {
+    &.beekeeping {
+      margin-top: 0;
+    }
+  }
+
+  &.background-grey {
+    padding: 40px 0px;
+    background-color: $color-grey-10;
+  }
+
+  .project-page-img-mobile {
+    display: none;
+  }
+
+  .project-page-img-desktop {
+    display: block;
+    justify-self: end;
+  }
+
+  &.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-ul-list {
+    .list-item {
+      text-align: left;
+
+      a {
+        &:hover {
+          color: #0a58ca;
+        }
+      }
+    }
+  }
+}
+
+.completed-projects-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+
+  .section-heading {
+    font-size: 26px;
+  }
+}

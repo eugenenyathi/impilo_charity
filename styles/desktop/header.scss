@@ -1,0 +1,103 @@
+.mobile-header-wrapper {
+  display: none;
+}
+
+.desktop-header-wrapper {
+  display: block;
+}
+
+.desktop-header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-header-inner-wrapper {
+  padding: 15px 0;
+  @include flexAlign;
+  gap: 25px;
+
+  .lg-screen-logo {
+    margin: 0 40px;
+  }
+
+  .ul-list {
+    list-style-type: none;
+    @include flexAlign;
+
+    gap: 25px;
+
+    .li-relative {
+      position: relative;
+    }
+
+    .ul-list-item {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 40px 0px;
+      text-decoration: none;
+      color: $color-txt-black;
+      text-transform: uppercase;
+      transition: all 250ms linear;
+
+      &.list-item-active {
+        color: $primary-color;
+        font-weight: bold;
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.project-dropdown-wrapper {
+  position: absolute;
+  margin-top: -20px;
+  left: 0;
+  opacity: 0;
+  width: 20px;
+  pointer-events: none;
+  padding: 10px 16px;
+  transition: width 250ms linear;
+  z-index: 1000;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  background-color: $color-clear;
+
+  &.show-dropdown {
+    opacity: 1;
+    width: 250px;
+    pointer-events: all;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $primary-color;
+  }
+
+  .dropdown-ul-list {
+    list-style-type: none;
+
+    .ul-list-item {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      color: $color-txt-black;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: capitalize;
+      transition: color 350ms linear;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

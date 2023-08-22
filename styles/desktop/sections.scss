@@ -1,0 +1,129 @@
+.our-beginning-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .image-gallery-grid {
+    align-self: center;
+    justify-self: end;
+  }
+}
+
+.about-us-image {
+  &.mobile-size {
+    display: none;
+  }
+
+  &.desktop {
+    display: block;
+    align-self: self-start;
+    justify-self: end;
+  }
+}
+
+.our-vision-wrapper {
+  padding: 50px 0;
+}
+
+.our-vision-inner-wrapper {
+  @extend .section-flex;
+  gap: 30px;
+
+  .youtube-video-wrapper {
+    overflow: hidden;
+    padding-bottom: 28%;
+    position: relative;
+    width: 55%;
+
+    & iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .text-wrapper {
+    width: 45%;
+
+    .section-heading {
+      margin-top: 0px;
+    }
+
+    .section-paragraph {
+      margin-top: 20px;
+      min-width: 300px;
+      max-width: 420px;
+      text-align: center;
+    }
+  }
+}
+
+.projects-wrapper {
+  .section-heading {
+    color: $secondary-color;
+  }
+}
+
+.projects-inner-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+
+  .project-item {
+    margin: 0;
+    margin-top: 20px;
+
+    .section-heading {
+      font-weight: bold;
+      font-size: 30px;
+      // margin: 30px 0 20px 0px;
+    }
+
+    .section-paragraph {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .read-more-btn-wrapper {
+      width: 100%;
+      margin-top: 18px;
+      @include flexCenter;
+
+      .section-read-more {
+        font-size: 14px;
+        text-transform: capitalize;
+        padding: 8px 14px;
+        border: 1px solid $secondary-color;
+        transition: all 350ms ease-in;
+
+        &:hover {
+          color: $color-clear;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.completed-projects-wrapper {
+  .section-item {
+    width: 800px;
+    text-align: left;
+  }
+
+  .section-items-wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+
+    .section-item-img {
+      margin: 0px;
+    }
+  }
+
+  .section-paragraph {
+    text-align: justify;
+  }
+}

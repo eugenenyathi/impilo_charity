@@ -1,0 +1,54 @@
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: $color-grey-aaa;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("/images/impilo-banner.png");
+
+  &.inner-pages {
+    height: 210px;
+    background-image: url("/images/page-banner.jpg");
+  }
+}
+
+.hero-inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 10px;
+  transform: translate(-50%, -50%);
+
+  .hero-text-wrapper {
+    width: 350px;
+    @include flexflip;
+    align-items: center;
+    gap: 10px;
+
+    .hero-text {
+      width: 100%;
+      color: $color-clear;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      width: 135px;
+      padding: 10px 0px;
+      color: $color-clear;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      border: 0;
+      border-radius: 5px;
+      background-color: $primary-color;
+      transition: background-color 300ms ease;
+    }
+  }
+}

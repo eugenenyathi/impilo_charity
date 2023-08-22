@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./global/config.scss";
+@import "./global/utils.scss";
+@import "./mobile/header.scss";
+@import "./mobile/hero.scss";
+@import "./mobile/sections.scss";
+@import "./mobile/projects-page.scss";
+@import "./mobile/board-members.scss";
+@import "./mobile/contact-us.scss";
+@import "./mobile/footer.scss";
+
+@media (min-width: 1020px) {
+  @import "./desktop/header.scss";
+  @import "./desktop/hero.scss";
+  @import "./desktop/sections.scss";
+  @import "./desktop/projects-page.scss";
+  @import "./desktop/board-members.scss";
+  @import "./desktop/contact-us.scss";
+  @import "./desktop/footer.scss";
+
+  .floating-donate-wrapper {
+    position: fixed;
+    bottom: 21px;
+    right: 35px;
+    @include flexAlign;
+    gap: 10px;
+    padding: 12px 22px;
+    color: $color-clear;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: $primary-color-2;
+  }
+}
+
+body {
+  font-family: $font-stack-1;
+  font-weight: $fw-normal;
+}
+
+.floating-donate-wrapper {
+  position: fixed;
+  bottom: 21px;
+  right: 35px;
+  @include flexAlign;
+  gap: 10px;
+  padding: 9px 16px;
+  color: $color-clear;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: $primary-color-2;
+}
+
+.videos-wrapper {
+  height: 500px;
+}

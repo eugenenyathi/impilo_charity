@@ -1,0 +1,83 @@
+.project-page-wrapper {
+  .top-level-heading {
+    &.width-container {
+      margin: 40px auto;
+      margin-bottom: 0;
+    }
+
+    .section-heading {
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  .section-paragraph {
+    font-size: 14px;
+  }
+
+  .section-heading.projects {
+    margin-top: 24px;
+    font-size: 21px;
+  }
+}
+
+.project-page-project {
+  margin-bottom: 40px;
+
+  &.monde-project.width-container {
+    margin-top: 20px;
+  }
+
+  .survey-project.width-container {
+    margin: 0px auto;
+  }
+
+  &.background-grey {
+    padding: 14px 0px;
+    background-color: $color-grey-10;
+  }
+
+  .project-page-img-mobile {
+    margin: 20px 0px;
+    max-height: 300px;
+
+    img {
+      max-height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .project-page-img-desktop {
+    display: none;
+  }
+
+  .project-ul-list {
+    margin-top: 25px;
+    list-style: disc;
+
+    .list-item {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 15px;
+
+      a {
+        display: block;
+        color: $color-blue-2;
+        margin-top: 6px;
+        transition: color 100ms ease;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.completed-projects-page {
+  .section-heading {
+    margin: 0;
+    margin: 14px 0;
+    font-size: 24px;
+    color: $primary-color;
+  }
+}
